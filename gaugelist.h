@@ -12,6 +12,9 @@ public:
     GaugeList(QWidget *parent);
     GaugeList();
 
+private:
+    void setupList();
+
 };
 
 #endif // GAUGELIST_H

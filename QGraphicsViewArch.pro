@@ -16,12 +16,14 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     mycustomitem.cpp \
     cgraphicsscene.cpp \
-    gaugelist.cpp
+    gaugelist.cpp \
+    gauge.cpp
 
 HEADERS  += mainwindow.h \
     mycustomitem.h \
     cgraphicsscene.h \
-    gaugelist.h
+    gaugelist.h \
+    gauge.h
 
 INCLUDEPATH += .
 INCLUDEPATH += /usr/local/include
@@ -42,3 +44,6 @@ LIBS += `pkg-config opencv --cflags --libs`
 
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    resources.qrc

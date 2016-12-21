@@ -7,6 +7,7 @@ class MyCustomItem : public QGraphicsItem
 
 public:
     MyCustomItem(QGraphicsItem *parent = NULL);
+
 protected:
     void paint(QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget = 0);
     QRectF boundingRect() const;

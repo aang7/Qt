@@ -49,3 +49,5 @@ void MyCustomItem::keyPressEvent(QKeyEvent *event){
 
     update();
 }
+
+

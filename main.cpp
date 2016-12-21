@@ -41,6 +41,8 @@ int main(int argc, char *argv[])
 
 
     scene->setSceneRect(0, 0, 300, 300);
+
+
     //QPixmap imgBackground("/home/aang/Imágenes/Wallpaper.png");
 
     //fitInView(p, Qt::KeepAspectRatio);
@@ -53,13 +55,14 @@ int main(int argc, char *argv[])
     MyCustomItem *myItem = new MyCustomItem;
     GaugeList *gaugeList = new GaugeList(frame);
 
-    gaugeList->addItem("Soy un item");
-    gaugeList->addItem("Soy otro item");
+    //gaugeList->addItem("Soy un item");
+    //gaugeList->addItem("Soy otro item");
 
     //scene->setFocus();
     //myItem->setFocus();
 
     scene->updateMat(image); //Jala
+
     scene->addItem(myItem);
 
     frameLayout->addWidget(&view);
