@@ -89,16 +89,23 @@ void CgraphicsScene::dropEvent(QGraphicsSceneDragDropEvent *event)
             /* Controlando por Filas(por el momento) */
             switch(row){
                 case 0:{
-                    Gauge firstItem(100, 200, cv::Point(200, 200));
-                    firstItem.onDraw(imageCV, 77);
+                    Gauge circularGauge(100, 200, cv::Point(200, 200));
+                    circularGauge.onDraw(imageCV, 77);
                     break;
                 }
 
                 case 1:{
-                    Gauge secondItem(500, 400, cv::Point(900, 500));
-                    secondItem.onDraw(imageCV, 77);
+                    Attitude attitudeGauge(cv::Point(600, 600), cv::Size(400, 500));
+                    attitudeGauge.onDraw(imageCV, 0, 0);
                     break;
                 }
+                case 2:{
+                    Bargauge barGauge(cv::Point(1000, 1000), cv::Point(1050, 100));
+                    barGauge.onDraw(imageCV, 77);
+                    break;
+                }
+
+
             }
 
             updateMat(imageCV);

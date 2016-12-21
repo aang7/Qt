@@ -17,13 +17,17 @@ SOURCES += main.cpp\
     mycustomitem.cpp \
     cgraphicsscene.cpp \
     gaugelist.cpp \
-    gauge.cpp
+    gauge.cpp \
+    attitude.cpp \
+    bargauge.cpp
 
 HEADERS  += mainwindow.h \
     mycustomitem.h \
     cgraphicsscene.h \
     gaugelist.h \
-    gauge.h
+    gauge.h \
+    attitude.h \
+    bargauge.h
 
 INCLUDEPATH += .
 INCLUDEPATH += /usr/local/include

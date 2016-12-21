@@ -14,7 +14,8 @@
 #include <opencv2/opencv.hpp>
 
 #include"gauge.h"
-
+#include"bargauge.h"
+#include"attitude.h"
 
 class CgraphicsScene : public QGraphicsScene
 {
